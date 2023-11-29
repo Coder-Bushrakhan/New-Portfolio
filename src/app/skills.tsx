@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 
 
@@ -15,15 +16,14 @@ export default function Skills(){
   ];
 
   return (
-    <section className="">
-        <h1 className='text-center text-3xl uppercase'>MY Skills</h1>
+ 
 
-<div>
-     
-    
+<div className='p-4'>
+<h1 className='text-3xl uppercase font-medium text-center'>MY Skills</h1>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-20 mb-10">
         {skills.map((skill) => (
-          <div key={skill.name} className="flex flex-col items-center">
+          <div key={skill.name} className="flex flex-col items-center hover:-translate-y-4 transition duration-700 ease-in-out  hover:scale-110">
             {/* <img src={skill.logo} alt={skill.name} className="w-20 h-20 object-contain mb-2" /> */}
             <h3 className="text-lg font-semibold">{skill.name}</h3>
             <div className="w-48 h-2 bg-gray-200 rounded-full">
@@ -36,7 +36,6 @@ export default function Skills(){
           </div>
         ))}
       </div>
-    </div>
-</section>
+   </div>
   );
 };

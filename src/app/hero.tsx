@@ -1,5 +1,6 @@
+"use client"
 import Image from "next/image"
-import Link from "next/link";
+
 import Typewriter from 'typewriter-effect';
 
 export default function Hero()
@@ -11,7 +12,7 @@ export default function Hero()
 
 <div className="hero min-h-screen">
   <div className="hero-content flex-col lg:flex-row ">
-  <div className="bg-gradient-to-r from-fuchsia-500 to-blue-500 rounded-full ">
+  <div className="bg-gradient-to-r from-fuchsia-500 to-blue-500 rounded-full hover:-translate-y-4 transition duration-700 ease-in-out  hover:scale-110 ">
     <Image src="/pic1.png" alt="hero" className="max-w-sm" height={500} width={500} />
     </div>
     <div className="ml-10">
