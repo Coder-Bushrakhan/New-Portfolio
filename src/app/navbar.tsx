@@ -13,7 +13,7 @@ export default function Navbar()
  
   <div className="navbar-end">
   <button className="bg-blue-600  rounded-lg hover:-translate-y-1 transition duration-700 ease-in-out  hover:scale-110  " >
-<a href="/cv/resume.pdf" download={"resume.pdf"}><h1 className="text-center p-2 text-white">Download Resume</h1></a>
+<a href="/cv/cv.pdf" download={"cv.pdf"}><h1 className="text-center p-2 text-white">Download Resume</h1></a>
   </button>
    
   </div>
